@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="3" guice-stage="DEVELOPMENT" name="Failed suite [QA Challenge]">
+  <test name="Run in Chrome Browser(failed)">
+    <parameter name="baseURL" value="http://soltech.net/"/>
+    <parameter name="browserType" value="chrome"/>
+    <classes>
+      <class name="com.soltech.tests.TestRunner">
+        <methods>
+          <include name="verifyJobDetailsPage"/>
+          <include name="searchForOpenQAPositions"/>
+          <include name="initializeBaseTest"/>
+          <include name="takeScreenshotIfFailed"/>
+          <include name="closeBrowser"/>
+          <include name="clickOnCareersOpenPositionsMenu"/>
+        </methods>
+      </class> <!-- com.soltech.tests.TestRunner -->
+    </classes>
+  </test> <!-- Run in Chrome Browser(failed) -->
+  <test name="Run in IE Browser(failed)">
+    <parameter name="browserType" value="ie"/>
+    <classes>
+      <class name="com.soltech.tests.TestRunner">
+        <methods>
+          <include name="verifyJobDetailsPage"/>
+          <include name="searchForOpenQAPositions"/>
+          <include name="initializeBaseTest"/>
+          <include name="takeScreenshotIfFailed"/>
+          <include name="closeBrowser"/>
+          <include name="clickOnCareersOpenPositionsMenu"/>
+        </methods>
+      </class> <!-- com.soltech.tests.TestRunner -->
+    </classes>
+  </test> <!-- Run in IE Browser(failed) -->
+</suite> <!-- Failed suite [QA Challenge] -->

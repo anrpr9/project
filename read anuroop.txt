@@ -1,0 +1,3 @@
+1.  Its Automation Java and Maven Project
+2.  i have user docker image of project to push into server 
+3.  the using the use of deploy.yml and jenkisfile i am running the job to install rediss and checking the data .
